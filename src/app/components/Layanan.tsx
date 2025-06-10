@@ -13,7 +13,7 @@ export default function Layanan() {
       <div className="container mx-auto px-4">
         <h2 className="text-2xl font-bold text-center mb-8">Layanan Kami</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {layananData.map(({ icon, title, href }, i) => (
+          {layananData.map(({ icon, title }, i) => (
             <div
               key={i}
               className="cursor-pointer p-6 bg-white rounded-lg shadow hover:shadow-md text-center transition"
