@@ -93,25 +93,6 @@ const sections = [
     },
   ];
   
-  const news = [
-    {
-      title: 'SEAGM Credits are Upgrading to SEAGM Balance',
-      img: '/assets/images/ID-49978-PicName-Introducing-SEAGM-Balance-Article-Featured-Image_Article_1200x630-1.webp',
-    },
-    {
-      title: 'How to get Discounts on Honor of Kings Tokens',
-      img: '/assets/images/ID-50045-PicName-How-to-Get-Discounts-on-Honor-of-Kings-Tokens-FI.webp',
-    },
-    {
-      title: 'How to Top Up Marvel Rivals Lattices',
-      img: '/assets/images/ID-50056-PicName-How-to-Top-Up-Marvel-Rivals-Lattices-FI.webp',
-    },
-    {
-      title: '36,000 MLBB Diamonds Await! Enter the Lucky Draw Now!',
-      img: '/assets/images/ID-49655-PicName-MLBB-Lucky-Draw-2025_KV_Article_1200x675.webp',
-    },
-  ];
-  
   export default function GameList() {
     return (
       <>
