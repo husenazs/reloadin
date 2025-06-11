@@ -160,33 +160,7 @@ const sections = [
             ))}
           </div>
         </section>
-  
-        <section className="py-12 bg-gray-50">
-          <div className="container mx-auto px-4">
-            <h2 className="text-2xl font-bold text-center mb-8">Berita Terbaru</h2>
-            <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
-              {news.map((item, i) => (
-                <div
-                  key={i}
-                  className="bg-white rounded-xl overflow-hidden shadow hover:shadow-md transition flex flex-col h-full"
-                >
-                  <div className="h-48 w-full overflow-hidden">
-                    <img
-                      src={item.img}
-                      alt={item.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-4 flex-1 flex items-center">
-                    <h5 className="text-sm font-medium text-gray-800 line-clamp-3">
-                      {item.title}
-                    </h5>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        
       </>
     );
   }

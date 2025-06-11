@@ -12,16 +12,47 @@ export default function Navbar() {
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <motion.a
-          href="#"
-          className="text-2xl font-extrabold tracking-wide text-blue-600 hover:text-blue-700 transition"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.1, rotate: -2 }}
-          transition={{ type: 'spring', stiffness: 300 }}
+        href="#"
+        className="text-2xl font-extrabold tracking-wide"
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        whileHover={{ scale: 1.1, rotate: -2 }}
+        transition={{ type: 'spring', stiffness: 300 }}
         >
-          <span className="bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text text-transparent">
+        <motion.span
+            className="relative inline-block"
+            initial={{ color: '#2563eb' }} // blue-600
+            whileHover={{
+            color: '#4338ca' // indigo-700
+            }}
+            transition={{
+            duration: 0.5,
+            ease: 'easeInOut'
+            }}
+        >
+            <motion.span
+            className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 bg-clip-text"
+            initial={{ 
+                clipPath: 'polygon(50% 0%, 50% 0%, 50% 100%, 50% 100%)',
+                opacity: 0
+            }}
+            whileHover={{
+                clipPath: 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',
+                opacity: 1
+            }}
+            transition={{
+                duration: 0.8,
+                ease: [0.4, 0, 0.2, 1],
+                clipPath: {
+                duration: 0.8,
+                ease: [0.4, 0, 0.2, 1]
+                }
+            }}
+            >
             Reloadin
-          </span>
+            </motion.span>
+            <span className="">Reloadin</span>
+        </motion.span>
         </motion.a>
 
         {/* Hamburger Icon (Mobile) */}
