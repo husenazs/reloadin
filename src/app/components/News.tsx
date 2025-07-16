@@ -31,7 +31,7 @@ export default function News() {
                   className="bg-white rounded-xl overflow-hidden shadow hover:shadow-md transition flex flex-col h-full"
                 >
                   <div className="h-48 w-full overflow-hidden">
-                    <img
+                    <Image
                       src={item.img}
                       alt={item.title}
                       className="w-full h-full object-cover"
