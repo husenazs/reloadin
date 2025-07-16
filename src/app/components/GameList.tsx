@@ -117,7 +117,7 @@ const sections = [
                           href={item.link}
                           className="flex items-center gap-3 bg-gray-50 hover:bg-white p-3 rounded-lg border border-gray-200 transition"
                         >
-                          <img
+                          <Image
                             src={item.img}
                             alt={item.title}
                             width={50}
